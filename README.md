@@ -3,26 +3,34 @@
 <p align="center"> Tencent ExMail SDK.</p>
 
 
-## Installing
+## 安装
 
 ```shell
 $ composer require shiran/easyexmail -vvv
 ```
 
-## Usage
+## 使用
 
-TODO
+```php
+use Shiran\EasyExMail\EasyExMail;
 
-## Contributing
+$config = [
+    'corpId' => 'your corp id',
+    'corpSecret' => 'your corp secret'
+];
 
-You can contribute in one of three ways:
+$easy = new EasyExMail($config);
 
-1. File bug reports using the [issue tracker](https://github.com/shiran/easyexmail/issues).
-2. Answer questions or fix bugs on the [issue tracker](https://github.com/shiran/easyexmail/issues).
-3. Contribute new features or update the wiki.
+// 获取所有部门
+$easy->department()->get();
 
-_The code contribution process is not very formal. You just need to make sure that you follow the PSR-0, PSR-1, and PSR-2 coding guidelines. Any new code contributions must be accompanied by unit tests where applicable._
+// 查找部门
+参数：
+    部门名（必填）
+    是否模糊匹配（可选 0 or 1)
+$easy->department()->find('name');
 
+```
 ## License
 
 MIT

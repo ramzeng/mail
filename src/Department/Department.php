@@ -27,14 +27,7 @@ class Department extends Base
 
         $response = $this->checkException(Zttp::get($url, $query)->json());
 
-        return array_map(function ($item) {
-            return [
-                'id' => $item['id'],
-                'name' => $item['name'],
-                'parent_id' => $item['parentid'],
-                'order' => $item['order']
-            ];
-        }, $response['department']);
+        return $response['department'];
     }
 
     /**
@@ -54,14 +47,7 @@ class Department extends Base
 
         $response = $this->checkException(Zttp::post($url, $form)->json());
 
-        return array_map(function ($item) {
-            return [
-                'id' => $item['id'],
-                'name' => $item['name'],
-                'parent_id' => $item['parentid'],
-                'order' => $item['order']
-            ];
-        }, $response['department']);
+        return $response['department'];
     }
 
     /**
