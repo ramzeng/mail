@@ -60,7 +60,57 @@ $easy->department()->build('name', 'parentId', 'order');
  */
 $easy->department()->update('departmentId', 'name', 'parentId', 'order');
 
+
+/**
+ * 查找部门成员
+ * 参数：
+ *  部门ID（必填)
+ *  简易或是详细数据（默认简易）
+ *  是否递归子部门成员（默认1）
+ */
+$easy->member()->get('departmentId', 'type', 'child');
+
+/**
+ * 查找成员
+ * 参数：
+ *  成员ID（必填)
+ */
+$easy->member()->find('email');
+
+/**
+ * 新建成员
+ * 参数：
+ *  成员ID（必填)
+ *  成员姓名（必填)
+ *  成员所属部门（必填)
+ *  密码（必填)
+ */
+$easy->member()->build(array $attribute);
+
+/**
+ * 删除成员
+ * 参数：
+ *  成员ID（必填)
+ */
+$easy->member()->delete('email');
+
+/**
+ * 更新成员
+ * 参数：
+ *  成员ID（必填)
+ */
+$easy->member()->build(array $attribute);
+
+/**
+ * 批量检查账号可用
+ * 参数：
+ *  账号（必填)
+ */
+$easy->member()->check(array $list);
+
 ```
+
+目前就是这些功能，慢慢逐步完善！
 ## License
 
 MIT
