@@ -14,8 +14,11 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
 
     public function register()
     {
-        $this->app->singleton(EasyExMail::class, function(){
-            return new EasyExMail(config('services.EasyExMail.id'), config('services.EasyExMail.secret'));
+        $this->app->singleton(EasyExMail::class, function () {
+            return new EasyExMail([
+                'corpId' => config('services.EasyExMail.id'),
+                'corpSecret' => config('services.EasyExMail.secret')
+            ]);
         });
 
         $this->app->alias(EasyExMail::class, 'EasyExMail');
