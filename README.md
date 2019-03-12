@@ -168,6 +168,53 @@ $easy->setting()->get(string $userId, array $type);
  */
 $easy->setting()->update(string $userId, array $option);
 ```
+## 系统日志相关
+
+```php
+/**
+ * 查看概况
+ * 参数：
+ *  域名（必填)
+ *  起点日期（必填）
+ *  终点日期（必填）
+ */
+$easy->record()->overview(string $domain, string $start, string $end);
+
+/**
+ * 查询邮件
+ * 参数：
+ *  类型（必填)
+ *  起点日期（必填）
+ *  终点日期（必填）
+ */
+$easy->record()->email(array $attribute);
+
+/**
+ * 查询登录日志
+ * 参数：
+ *  用户ID（必填)
+ *  起点日期（必填）
+ *  终点日期（必填）
+ */
+$easy->record()->email(array $attribute);
+
+/**
+ * 查询批量任务
+ * 参数：
+ *  起点日期（必填）
+ *  终点日期（必填）
+ */
+$easy->record()->mission(array $attribute);
+
+/**
+ * 查询操作日志
+ * 参数：
+ *  起点日期（必填）
+ *  终点日期（必填）
+ *  类型（必填）
+ */
+$easy->record()->operate(array $attribute);
+```
 
 目前就是这些功能，慢慢逐步完善！
 ## License
