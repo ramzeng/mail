@@ -253,7 +253,7 @@ $easy->aider()->unreadEmail(string $userId, string $start, string $end);
 $easy->aider()->login(string $userId);
 ```
 
-感谢 overtrue !
+I like php, laravel, and overtrue !
 
 ## License
 
