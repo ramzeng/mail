@@ -63,6 +63,7 @@ $easy->department()->build('name', 'parentId', 'order');
  *  权重
  */
 $easy->department()->update('departmentId', 'name', 'parentId', 'order');
+```
 
 ## 成员相关
 
