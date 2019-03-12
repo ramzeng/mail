@@ -215,8 +215,28 @@ $easy->record()->mission(array $attribute);
  */
 $easy->record()->operate(array $attribute);
 ```
+## 其他功能
 
-目前就是这些功能，慢慢逐步完善！
+```php
+/**
+ * 查询未读邮件数
+ * 参数：
+ *  起点日期（必填）
+ *  终点日期（必填）
+ *  用户ID（必填）
+ */
+$easy->aider()->unreadEmail(string $userId, string $start, string $end);
+
+/**
+ * 单点登录
+ * 参数：
+ *  用户ID（必填）
+ */
+$easy->aider()->login(string $userId);
+```
+
+感谢 overtrue !
+
 ## License
 
 MIT
