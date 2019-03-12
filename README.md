@@ -20,7 +20,11 @@ $config = [
 ];
 
 $easy = new EasyExMail($config);
+```
 
+# 部门相关
+
+```php
 /**
  * 获取所有部门
  */
@@ -59,8 +63,10 @@ $easy->department()->build('name', 'parentId', 'order');
  *  权重
  */
 $easy->department()->update('departmentId', 'name', 'parentId', 'order');
+```
+# 成员相关
 
-
+```php
 /**
  * 查找部门成员
  * 参数：
