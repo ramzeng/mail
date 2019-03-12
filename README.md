@@ -22,6 +22,24 @@ $config = [
 $easy = new EasyExMail($config);
 ```
 
+## 在Laravel中使用
+
+进入config/service.php:
+
+```php
+'EasyExMail' => [
+    'id' => env('EX_MAIL_ID'),
+    'secret' => env('EX_MAIL_SECRET')
+]
+```
+
+进入.env：
+
+```php
+EX_MAIL_ID=xxxxxx
+EX_MAIL_SECRET=xxxxxx
+```
+
 ## 部门相关
 
 ```php
