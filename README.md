@@ -35,7 +35,7 @@ $easy = new EasyExMail($config);
 
 进入.env：
 
-```php
+```bash
 EX_MAIL_ID=xxxxxx
 EX_MAIL_SECRET=xxxxxx
 ```
