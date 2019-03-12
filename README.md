@@ -124,7 +124,7 @@ $easy->member()->delete('email');
  * 参数：
  *  成员ID（必填)
  */
-$easy->member()->build(array $attribute);
+$easy->member()->update(array $attribute);
 
 /**
  * 批量检查账号可用
