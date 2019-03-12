@@ -22,7 +22,7 @@ $config = [
 $easy = new EasyExMail($config);
 ```
 
-# 部门相关
+## 部门相关
 
 ```php
 /**
@@ -63,8 +63,8 @@ $easy->department()->build('name', 'parentId', 'order');
  *  权重
  */
 $easy->department()->update('departmentId', 'name', 'parentId', 'order');
-```
-# 成员相关
+
+## 成员相关
 
 ```php
 /**
@@ -113,7 +113,40 @@ $easy->member()->build(array $attribute);
  *  账号（必填)
  */
 $easy->member()->check(array $list);
+```
 
+## 邮件群组相关
+
+```php
+/**
+ * 创建邮件群组
+ * 参数：
+ *  账号（必填)
+ *  名称（必填）
+ *  类型（必填）
+ */
+$easy->group()->build(array $attribute);
+
+/**
+ * 更新邮件群组
+ * 参数：
+ *  账号（必填)
+ */
+$easy->group()->update(array $attribute);
+
+/**
+ * 删除邮件群组
+ * 参数：
+ *  账号（必填)
+ */
+$easy->group()->delete(string $groupId);
+
+/**
+ * 查看邮件群组
+ * 参数：
+ *  账号（必填)
+ */
+$easy->group()->find(string $groupId);
 ```
 
 目前就是这些功能，慢慢逐步完善！
