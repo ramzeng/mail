@@ -53,8 +53,6 @@ trait Helper
 
     public function checkAttribute(array $attribute, array $required)
     {
-        $attribute = array_filter($attribute);
-
         array_walk($required, function ($value) use ($attribute) {
             if (!array_key_exists($value, $attribute)) {
                 throw new InvalidArgumentException("Attribute {$value} is required");
