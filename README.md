@@ -149,6 +149,25 @@ $easy->group()->delete(string $groupId);
  */
 $easy->group()->find(string $groupId);
 ```
+## 功能设置相关
+
+```php
+/**
+ * 查看设置
+ * 参数：
+ *  账号（必填)
+ *  类型（必填）
+ */
+$easy->setting()->get(string $userId, array $type);
+
+/**
+ * 更新设置
+ * 参数：
+ *  账号（必填)
+ *  设置（必填）
+ */
+$easy->setting()->update(string $userId, array $option);
+```
 
 目前就是这些功能，慢慢逐步完善！
 ## License
