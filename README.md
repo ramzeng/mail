@@ -214,7 +214,7 @@ $easy->record()->email(array $attribute);
  *  起点日期（必填）
  *  终点日期（必填）
  */
-$easy->record()->email(array $attribute);
+$easy->record()->login(array $attribute);
 
 /**
  * 查询批量任务
