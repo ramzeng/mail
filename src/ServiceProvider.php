@@ -1,9 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: moon
- * Date: 2019-02-21
- * Time: 18:04
+
+/*
+ * This file is part of the shiran/easyexmail.
+ *
+ * (c) shiran
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
  */
 
 namespace Shiran\EasyExMail;
@@ -17,7 +20,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
         $this->app->singleton(EasyExMail::class, function () {
             return new EasyExMail([
                 'corpId' => config('services.EasyExMail.id'),
-                'corpSecret' => config('services.EasyExMail.secret')
+                'corpSecret' => config('services.EasyExMail.secret'),
             ]);
         });
 

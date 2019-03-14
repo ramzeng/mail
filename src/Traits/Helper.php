@@ -1,13 +1,15 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: moon
- * Date: 2019-03-11
- * Time: 14:32
+
+/*
+ * This file is part of the shiran/easyexmail.
+ *
+ * (c) shiran
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
  */
 
 namespace Shiran\EasyExMail\Traits;
-
 
 use Shiran\EasyExMail\Exception\InvalidArgumentException;
 use Shiran\EasyExMail\Exception\ReferenceException;
@@ -17,7 +19,9 @@ trait Helper
 {
     /**
      * @param $config
+     *
      * @return mixed
+     *
      * @throws ReferenceException
      */
     public function getAccessToken($config)
@@ -26,7 +30,7 @@ trait Helper
 
         $query = [
             'corpid' => $config['corpId'],
-            'corpsecret' => $config['corpSecret']
+            'corpsecret' => $config['corpSecret'],
         ];
 
         $response = Zttp::get($url, $query)->json();
@@ -38,13 +42,16 @@ trait Helper
 
     /**
      * @param $response
+     *
      * @return mixed
+     *
      * @throws ReferenceException
      */
     public function checkException($response)
     {
-        if ($response['errcode'] != 0) {
+        if (0 != $response['errcode']) {
             $error = sprintf('errCode:%s,errMsg:%s', $response['errcode'], $response['errmsg']);
+
             throw new ReferenceException($error);
         }
 

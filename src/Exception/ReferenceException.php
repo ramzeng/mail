@@ -1,15 +1,16 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: moon
- * Date: 2019-02-21
- * Time: 15:12
+
+/*
+ * This file is part of the shiran/easyexmail.
+ *
+ * (c) shiran
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
  */
 
 namespace Shiran\EasyExMail\Exception;
 
-
 class ReferenceException extends Exception
 {
-
 }

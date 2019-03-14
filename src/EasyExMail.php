@@ -1,11 +1,20 @@
 <?php
 
-namespace Shiran\EasyExMail;
+/*
+ * This file is part of the shiran/easyexmail.
+ *
+ * (c) shiran
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
 
+namespace Shiran\EasyExMail;
 
 class EasyExMail
 {
     protected $config;
+
     protected $factory;
 
     public function __construct(array $config)
@@ -17,7 +26,9 @@ class EasyExMail
     /**
      * @param $name
      * @param $arguments
+     *
      * @return mixed
+     *
      * @throws Exception\InvalidArgumentException
      */
     public function __call($name, $arguments)
@@ -27,7 +38,9 @@ class EasyExMail
 
     /**
      * @param $name
+     *
      * @return mixed
+     *
      * @throws Exception\InvalidArgumentException
      */
     public function __get($name)

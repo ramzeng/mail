@@ -1,9 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: moon
- * Date: 2019-03-11
- * Time: 14:06
+
+/*
+ * This file is part of the shiran/easyexmail.
+ *
+ * (c) shiran
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
  */
 
 namespace Shiran\EasyExMail\Department;
@@ -15,6 +18,7 @@ class Department extends Base
 {
     /**
      * @return array
+     *
      * @throws \Shiran\EasyExMail\Exception\ReferenceException
      */
     public function get()
@@ -22,7 +26,7 @@ class Department extends Base
         $url = 'https://api.exmail.qq.com/cgi-bin/department/list';
 
         $query = [
-            'access_token' => $this->accessToken
+            'access_token' => $this->accessToken,
         ];
 
         $response = $this->checkException(Zttp::get($url, $query)->json());
@@ -32,17 +36,19 @@ class Department extends Base
 
     /**
      * @param string $name
-     * @param int $fuzzy
+     * @param int    $fuzzy
+     *
      * @return array
+     *
      * @throws \Shiran\EasyExMail\Exception\ReferenceException
      */
     public function find(string $name, int $fuzzy = 0)
     {
-        $url = 'https://api.exmail.qq.com/cgi-bin/department/search?access_token=' . $this->accessToken;
+        $url = 'https://api.exmail.qq.com/cgi-bin/department/search?access_token='.$this->accessToken;
 
         $form = array_filter([
             'name' => $name,
-            'fuzzy' => $fuzzy
+            'fuzzy' => $fuzzy,
         ]);
 
         $response = $this->checkException(Zttp::post($url, $form)->json());
@@ -52,7 +58,9 @@ class Department extends Base
 
     /**
      * @param int $departmentId
+     *
      * @return bool
+     *
      * @throws \Shiran\EasyExMail\Exception\ReferenceException
      */
     public function delete(int $departmentId)
@@ -61,7 +69,7 @@ class Department extends Base
 
         $query = [
             'access_token' => $this->accessToken,
-            'id' => $departmentId
+            'id' => $departmentId,
         ];
 
         $this->checkException(Zttp::get($url, $query)->json());
@@ -71,46 +79,50 @@ class Department extends Base
 
     /**
      * @param string $name
-     * @param int $parentId
-     * @param int $order
+     * @param int    $parentId
+     * @param int    $order
+     *
      * @return array
+     *
      * @throws \Shiran\EasyExMail\Exception\ReferenceException
      */
     public function build(string $name, int $parentId = 1, int $order = 0)
     {
-        $url = 'https://api.exmail.qq.com/cgi-bin/department/create?access_token=' . $this->accessToken;
+        $url = 'https://api.exmail.qq.com/cgi-bin/department/create?access_token='.$this->accessToken;
 
         $form = [
             'name' => $name,
             'parentid' => $parentId,
-            'order' => $order
+            'order' => $order,
         ];
 
         $response = $this->checkException(Zttp::post($url, $form)->json());
 
         return [
             'name' => $name,
-            'department_id' => $response['id']
+            'department_id' => $response['id'],
         ];
     }
 
     /**
-     * @param int $departmentId
+     * @param int    $departmentId
      * @param string $name
-     * @param int $parentId
-     * @param int $order
+     * @param int    $parentId
+     * @param int    $order
+     *
      * @return bool
+     *
      * @throws \Shiran\EasyExMail\Exception\ReferenceException
      */
     public function update(int $departmentId, string $name = '', int $parentId = 0, int $order = 0)
     {
-        $url = 'https://api.exmail.qq.com/cgi-bin/department/update?access_token=' . $this->accessToken;
+        $url = 'https://api.exmail.qq.com/cgi-bin/department/update?access_token='.$this->accessToken;
 
         $form = array_filter([
             'id' => $departmentId,
             'name' => $name,
             'parentid' => $parentId,
-            'order' => $order
+            'order' => $order,
         ]);
 
         $this->checkException(Zttp::post($url, $form)->json());

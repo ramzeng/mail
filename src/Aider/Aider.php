@@ -1,13 +1,15 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: moon
- * Date: 2019-03-12
- * Time: 14:48
+
+/*
+ * This file is part of the shiran/easyexmail.
+ *
+ * (c) shiran
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
  */
 
 namespace Shiran\EasyExMail\Aider;
-
 
 use Shiran\EasyExMail\Base\Base;
 use Zttp\Zttp;
@@ -18,7 +20,9 @@ class Aider extends Base
      * @param string $userId
      * @param string $start
      * @param string $end
+     *
      * @return mixed
+     *
      * @throws \Shiran\EasyExMail\Exception\ReferenceException
      */
     public function unreadEmail(string $userId, string $start, string $end)
@@ -29,7 +33,7 @@ class Aider extends Base
             'access_token' => $this->accessToken,
             'userid' => $userId,
             'begin_date' => $start,
-            'end_date' => $end
+            'end_date' => $end,
         ];
 
         $response = $this->checkException(Zttp::get($url, $query)->json());
@@ -39,7 +43,9 @@ class Aider extends Base
 
     /**
      * @param string $userId
+     *
      * @return mixed
+     *
      * @throws \Shiran\EasyExMail\Exception\ReferenceException
      */
     public function loginUrl(string $userId)
@@ -48,14 +54,14 @@ class Aider extends Base
 
         $query = [
             'access_token' => $this->accessToken,
-            'userid' => $userId
+            'userid' => $userId,
         ];
 
         $response = $this->checkException(Zttp::get($url, $query)->json());
 
         return [
             'url' => $response['login_url'],
-            'expired_at' => date('Y-m-d H:i:s', time() + $response['expires_in'])
+            'expired_at' => date('Y-m-d H:i:s', time() + $response['expires_in']),
         ];
     }
 }
