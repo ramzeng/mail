@@ -1,9 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: moon
- * Date: 2019-03-11
- * Time: 15:09
+
+/*
+ * This file is part of the shiran/easyexmail.
+ *
+ * (c) shiran
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
  */
 
 namespace Shiran\EasyExMail\Member;
@@ -14,10 +17,12 @@ use Shiran\EasyExMail\Base\Base;
 class Member extends Base
 {
     /**
-     * @param int $departmentId
+     * @param int    $departmentId
      * @param string $type
-     * @param int $fetchChild
+     * @param int    $fetchChild
+     *
      * @return array
+     *
      * @throws \Shiran\EasyExMail\Exception\ReferenceException
      */
     public function get(int $departmentId, string $type = 'simple', int $fetchChild = 1)
@@ -25,12 +30,12 @@ class Member extends Base
         $simple = 'https://api.exmail.qq.com/cgi-bin/user/simplelist';
         $detail = 'https://api.exmail.qq.com/cgi-bin/user/list';
 
-        $url = $type == 'simple' ? $simple : $detail;
+        $url = 'simple' == $type ? $simple : $detail;
 
         $query = [
             'access_token' => $this->accessToken,
             'department_id' => $departmentId,
-            'fetch_child' => $fetchChild
+            'fetch_child' => $fetchChild,
         ];
 
         $response = $this->checkException(Zttp::get($url, $query)->json());
@@ -40,7 +45,9 @@ class Member extends Base
 
     /**
      * @param string $email
+     *
      * @return array
+     *
      * @throws \Shiran\EasyExMail\Exception\ReferenceException
      */
     public function find(string $email)
@@ -49,7 +56,7 @@ class Member extends Base
 
         $query = [
             'access_token' => $this->accessToken,
-            'userid' => $email
+            'userid' => $email,
         ];
 
         $response = $this->checkException(Zttp::get($url, $query)->json());
@@ -59,12 +66,14 @@ class Member extends Base
 
     /**
      * @param array $attribute
+     *
      * @return bool
+     *
      * @throws \Shiran\EasyExMail\Exception\ReferenceException
      */
     public function build(array $attribute)
     {
-        $url = 'https://api.exmail.qq.com/cgi-bin/user/create?access_token=' . $this->accessToken;
+        $url = 'https://api.exmail.qq.com/cgi-bin/user/create?access_token='.$this->accessToken;
 
         $attribute = array_filter($attribute);
 
@@ -79,7 +88,9 @@ class Member extends Base
 
     /**
      * @param string $email
+     *
      * @return bool
+     *
      * @throws \Shiran\EasyExMail\Exception\ReferenceException
      */
     public function delete(string $email)
@@ -88,7 +99,7 @@ class Member extends Base
 
         $query = [
             'access_token' => $this->accessToken,
-            'userid' => $email
+            'userid' => $email,
         ];
 
         $this->checkException(Zttp::get($url, $query)->json());
@@ -98,12 +109,14 @@ class Member extends Base
 
     /**
      * @param array $attribute
+     *
      * @return bool
+     *
      * @throws \Shiran\EasyExMail\Exception\ReferenceException
      */
     public function update(array $attribute)
     {
-        $url = 'https://api.exmail.qq.com/cgi-bin/user/update?access_token=' . $this->accessToken;
+        $url = 'https://api.exmail.qq.com/cgi-bin/user/update?access_token='.$this->accessToken;
 
         $attribute = array_filter($attribute);
 
@@ -118,12 +131,14 @@ class Member extends Base
 
     /**
      * @param array $list
+     *
      * @return mixed
+     *
      * @throws \Shiran\EasyExMail\Exception\ReferenceException
      */
     public function check(array $list)
     {
-        $url = 'https://api.exmail.qq.com/cgi-bin/user/batchcheck?access_token=' . $this->accessToken;
+        $url = 'https://api.exmail.qq.com/cgi-bin/user/batchcheck?access_token='.$this->accessToken;
 
         $required = ['userlist'];
 
