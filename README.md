@@ -2,6 +2,9 @@
 
 <p align="center"> Tencent ExMail SDK.</p>
 
+## 官方文档
+[查看](https://exmail.qq.com/qy_mng_logic/doc#10001)
+目前SDK只有主动调用，暂无回调模式。
 
 ## 安装
 
