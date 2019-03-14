@@ -2,6 +2,8 @@
 
 <p align="center"> Tencent ExMail SDK.</p>
 
+![StyleCI build status](https://github.styleci.io/repos/171849879/shield) 
+
 ## 官方文档
 [查看](https://exmail.qq.com/qy_mng_logic/doc#10001)
 目前SDK只有主动调用，暂无回调模式。
