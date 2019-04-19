@@ -1,9 +1,9 @@
 <?php
 
 /*
- * This file is part of the Icehco/easyexmail.
+ * This file is part of the icecho/easyexmail.
  *
- * (c) Icehco <iymiym@icloud.com>
+ * (c) icecho <iymiym@icloud.com>
  *
  * This source file is subject to the MIT license that is bundled
  * with this source code in the file LICENSE.
