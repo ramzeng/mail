@@ -1,11 +1,10 @@
 <?php
-$header = <<<EOF
+
 This file is part of the Icehco/easyexmail.
 
 (c) Icehco <iymiym@icloud.com>
 
 This source file is subject to the MIT license that is bundled.
-EOF;
 
 return PhpCsFixer\Config::create()
     ->setRiskyAllowed(true)
