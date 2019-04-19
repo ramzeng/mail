@@ -1,18 +1,18 @@
 <?php
 
 /*
- * This file is part of the shiran/easyexmail.
+ * This file is part of the Icehco/easyexmail.
  *
- * (c) shiran <iymiym@icloud.com>
+ * (c) Icehco <iymiym@icloud.com>
  *
  * This source file is subject to the MIT license that is bundled
  * with this source code in the file LICENSE.
  */
 
-namespace Shiran\EasyExMail\Record;
+namespace Icehco\EasyExMail\Record;
 
 use Zttp\Zttp;
-use Shiran\EasyExMail\Base\Base;
+use Icehco\EasyExMail\Base\Base;
 
 class Record extends Base
 {
@@ -23,7 +23,7 @@ class Record extends Base
      *
      * @return array
      *
-     * @throws \Shiran\EasyExMail\Exception\ReferenceException
+     * @throws \Icehco\EasyExMail\Exception\ReferenceException
      */
     public function overview(string $domain, string $start, string $end)
     {
@@ -48,7 +48,7 @@ class Record extends Base
      *
      * @return mixed
      *
-     * @throws \Shiran\EasyExMail\Exception\ReferenceException
+     * @throws \Icehco\EasyExMail\Exception\ReferenceException
      */
     public function email(array $attribute)
     {
@@ -68,7 +68,7 @@ class Record extends Base
      *
      * @return mixed
      *
-     * @throws \Shiran\EasyExMail\Exception\ReferenceException
+     * @throws \Icehco\EasyExMail\Exception\ReferenceException
      */
     public function login(array $attribute)
     {
@@ -88,7 +88,7 @@ class Record extends Base
      *
      * @return mixed
      *
-     * @throws \Shiran\EasyExMail\Exception\ReferenceException
+     * @throws \Icehco\EasyExMail\Exception\ReferenceException
      */
     public function mission(array $attribute)
     {
@@ -108,7 +108,7 @@ class Record extends Base
      *
      * @return mixed
      *
-     * @throws \Shiran\EasyExMail\Exception\ReferenceException
+     * @throws \Icehco\EasyExMail\Exception\ReferenceException
      */
     public function operate(array $attribute)
     {

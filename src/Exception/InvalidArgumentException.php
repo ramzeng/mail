@@ -1,15 +1,15 @@
 <?php
 
 /*
- * This file is part of the shiran/easyexmail.
+ * This file is part of the Icehco/easyexmail.
  *
- * (c) shiran <iymiym@icloud.com>
+ * (c) Icehco <iymiym@icloud.com>
  *
  * This source file is subject to the MIT license that is bundled
  * with this source code in the file LICENSE.
  */
 
-namespace Shiran\EasyExMail\Exception;
+namespace Icehco\EasyExMail\Exception;
 
 class InvalidArgumentException extends Exception
 {

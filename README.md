@@ -11,13 +11,13 @@
 ## 安装
 
 ```shell
-$ composer require shiran/easyexmail -vvv
+$ composer require Icehco/easyexmail -vvv
 ```
 
 ## 使用
 
 ```php
-use Shiran\EasyExMail\EasyExMail;
+use Icehco\EasyExMail\EasyExMail;
 
 $config = [
     'corpId' => 'your corp id',

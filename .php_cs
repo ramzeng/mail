@@ -1,8 +1,8 @@
 <?php
 $header = <<<EOF
-This file is part of the shiran/easyexmail.
+This file is part of the Icehco/easyexmail.
 
-(c) shiran <584636675@qq.com>
+(c) Icehco <iymiym@icloud.com>
 
 This source file is subject to the MIT license that is bundled.
 EOF;

@@ -1,18 +1,18 @@
 <?php
 
 /*
- * This file is part of the shiran/easyexmail.
+ * This file is part of the Icehco/easyexmail.
  *
- * (c) shiran <iymiym@icloud.com>
+ * (c) Icehco <iymiym@icloud.com>
  *
  * This source file is subject to the MIT license that is bundled
  * with this source code in the file LICENSE.
  */
 
-namespace Shiran\EasyExMail\Group;
+namespace Icehco\EasyExMail\Group;
 
 use Zttp\Zttp;
-use Shiran\EasyExMail\Base\Base;
+use Icehco\EasyExMail\Base\Base;
 
 class Group extends Base
 {
@@ -23,7 +23,7 @@ class Group extends Base
      *
      * @return mixed
      *
-     * @throws \Shiran\EasyExMail\Exception\ReferenceException
+     * @throws \Icehco\EasyExMail\Exception\ReferenceException
      */
     public function find(string $groupId)
     {
@@ -44,7 +44,7 @@ class Group extends Base
      *
      * @return bool
      *
-     * @throws \Shiran\EasyExMail\Exception\ReferenceException
+     * @throws \Icehco\EasyExMail\Exception\ReferenceException
      */
     public function build(array $attribute)
     {
@@ -64,7 +64,7 @@ class Group extends Base
      *
      * @return bool
      *
-     * @throws \Shiran\EasyExMail\Exception\ReferenceException
+     * @throws \Icehco\EasyExMail\Exception\ReferenceException
      */
     public function update(array $attribute)
     {
@@ -84,7 +84,7 @@ class Group extends Base
      *
      * @return bool
      *
-     * @throws \Shiran\EasyExMail\Exception\ReferenceException
+     * @throws \Icehco\EasyExMail\Exception\ReferenceException
      */
     public function delete(string $groupId)
     {

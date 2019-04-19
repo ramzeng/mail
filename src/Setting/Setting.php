@@ -1,17 +1,17 @@
 <?php
 
 /*
- * This file is part of the shiran/easyexmail.
+ * This file is part of the Icehco/easyexmail.
  *
- * (c) shiran <iymiym@icloud.com>
+ * (c) Icehco <iymiym@icloud.com>
  *
  * This source file is subject to the MIT license that is bundled
  * with this source code in the file LICENSE.
  */
 
-namespace Shiran\EasyExMail\Setting;
+namespace Icehco\EasyExMail\Setting;
 
-use Shiran\EasyExMail\Base\Base;
+use Icehco\EasyExMail\Base\Base;
 use Zttp\Zttp;
 
 class Setting extends Base
@@ -22,7 +22,7 @@ class Setting extends Base
      *
      * @return mixed
      *
-     * @throws \Shiran\EasyExMail\Exception\ReferenceException
+     * @throws \Icehco\EasyExMail\Exception\ReferenceException
      */
     public function get(string $userId, array $type)
     {
@@ -44,7 +44,7 @@ class Setting extends Base
      *
      * @return bool
      *
-     * @throws \Shiran\EasyExMail\Exception\ReferenceException
+     * @throws \Icehco\EasyExMail\Exception\ReferenceException
      */
     public function update(string $userId, array $option)
     {

@@ -1,18 +1,18 @@
 <?php
 
 /*
- * This file is part of the shiran/easyexmail.
+ * This file is part of the Icehco/easyexmail.
  *
- * (c) shiran <iymiym@icloud.com>
+ * (c) Icehco <iymiym@icloud.com>
  *
  * This source file is subject to the MIT license that is bundled
  * with this source code in the file LICENSE.
  */
 
-namespace Shiran\EasyExMail\Traits;
+namespace Icehco\EasyExMail\Traits;
 
-use Shiran\EasyExMail\Exception\InvalidArgumentException;
-use Shiran\EasyExMail\Exception\ReferenceException;
+use Icehco\EasyExMail\Exception\InvalidArgumentException;
+use Icehco\EasyExMail\Exception\ReferenceException;
 use Zttp\Zttp;
 
 trait Helper

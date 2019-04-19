@@ -1,11 +1,11 @@
 {
-    "name": "shiran\/easyexmail",
+    "name": "icecho\/easyexmail",
     "description": "Tencent ExMail SDK",
     "license": "MIT",
     "authors": [
         {
-            "name": "shiran",
-            "email": "584636675@qq.com"
+            "name": "icecho",
+            "email": "iymiym@icloud.com"
         }
     ],
     "require": {
@@ -13,13 +13,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Shiran\\EasyExMail\\": "src"
+            "Icehco\\EasyExMail\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Shiran\\EasyExMail\\ServiceProvider"
+                "Icecho\\EasyExMail\\ServiceProvider"
             ]
         }
     }
