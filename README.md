@@ -11,7 +11,7 @@
 ## 安装
 
 ```shell
-$ composer require Icehco/easyexmail -vvv
+$ composer require icehco/easyexmail -vvv
 ```
 
 ## 使用
