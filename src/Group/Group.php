@@ -17,7 +17,6 @@ use Icecho\EasyExMail\Base\Base;
 class Group extends Base
 {
     /**
-     *
      * @param string $groupId
      *
      * @return mixed
