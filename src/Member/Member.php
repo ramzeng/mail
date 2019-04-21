@@ -17,9 +17,9 @@ use Icecho\EasyExMail\Base\Base;
 class Member extends Base
 {
     /**
-     * @param int $departmentId
+     * @param int    $departmentId
      * @param string $type
-     * @param int $fetchChild
+     * @param int    $fetchChild
      *
      * @return array
      *
