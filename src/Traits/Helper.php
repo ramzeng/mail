@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Icehco\EasyExMail\Traits;
+namespace Icecho\EasyExMail\Traits;
 
-use Icehco\EasyExMail\Exception\InvalidArgumentException;
-use Icehco\EasyExMail\Exception\ReferenceException;
+use Icecho\EasyExMail\Exception\InvalidArgumentException;
+use Icecho\EasyExMail\Exception\ReferenceException;
 use Zttp\Zttp;
 
 trait Helper

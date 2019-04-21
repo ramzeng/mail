@@ -9,21 +9,20 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Icehco\EasyExMail\Group;
+namespace Icecho\EasyExMail\Group;
 
 use Zttp\Zttp;
-use Icehco\EasyExMail\Base\Base;
+use Icecho\EasyExMail\Base\Base;
 
 class Group extends Base
 {
     /**
-     * ran\EasyExMail\Exception\ReferenceException.
      *
      * @param string $groupId
      *
      * @return mixed
      *
-     * @throws \Icehco\EasyExMail\Exception\ReferenceException
+     * @throws \Icecho\EasyExMail\Exception\ReferenceException
      */
     public function find(string $groupId)
     {
@@ -44,7 +43,7 @@ class Group extends Base
      *
      * @return bool
      *
-     * @throws \Icehco\EasyExMail\Exception\ReferenceException
+     * @throws \Icecho\EasyExMail\Exception\ReferenceException
      */
     public function build(array $attribute)
     {
@@ -64,7 +63,7 @@ class Group extends Base
      *
      * @return bool
      *
-     * @throws \Icehco\EasyExMail\Exception\ReferenceException
+     * @throws \Icecho\EasyExMail\Exception\ReferenceException
      */
     public function update(array $attribute)
     {
@@ -84,7 +83,7 @@ class Group extends Base
      *
      * @return bool
      *
-     * @throws \Icehco\EasyExMail\Exception\ReferenceException
+     * @throws \Icecho\EasyExMail\Exception\ReferenceException
      */
     public function delete(string $groupId)
     {

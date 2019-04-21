@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Icehco\EasyExMail\Exception;
+namespace Icecho\EasyExMail\Exception;
 
 class ReferenceException extends Exception
 {

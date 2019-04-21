@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Icehco\EasyExMail;
+namespace Icecho\EasyExMail;
 
-use Icehco\EasyExMail\Exception\InvalidArgumentException;
+use Icecho\EasyExMail\Exception\InvalidArgumentException;
 
 class Factory
 {

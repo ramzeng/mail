@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Icehco\\EasyExMail\\": "src"
+            "Icecho\\EasyExMail\\": "src"
         }
     },
     "extra": {

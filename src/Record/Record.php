@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Icehco\EasyExMail\Record;
+namespace Icecho\EasyExMail\Record;
 
 use Zttp\Zttp;
-use Icehco\EasyExMail\Base\Base;
+use Icecho\EasyExMail\Base\Base;
 
 class Record extends Base
 {
@@ -23,7 +23,7 @@ class Record extends Base
      *
      * @return array
      *
-     * @throws \Icehco\EasyExMail\Exception\ReferenceException
+     * @throws \Icecho\EasyExMail\Exception\ReferenceException
      */
     public function overview(string $domain, string $start, string $end)
     {
@@ -48,7 +48,7 @@ class Record extends Base
      *
      * @return mixed
      *
-     * @throws \Icehco\EasyExMail\Exception\ReferenceException
+     * @throws \Icecho\EasyExMail\Exception\ReferenceException
      */
     public function email(array $attribute)
     {
@@ -68,7 +68,7 @@ class Record extends Base
      *
      * @return mixed
      *
-     * @throws \Icehco\EasyExMail\Exception\ReferenceException
+     * @throws \Icecho\EasyExMail\Exception\ReferenceException
      */
     public function login(array $attribute)
     {
@@ -88,7 +88,7 @@ class Record extends Base
      *
      * @return mixed
      *
-     * @throws \Icehco\EasyExMail\Exception\ReferenceException
+     * @throws \Icecho\EasyExMail\Exception\ReferenceException
      */
     public function mission(array $attribute)
     {
@@ -108,7 +108,7 @@ class Record extends Base
      *
      * @return mixed
      *
-     * @throws \Icehco\EasyExMail\Exception\ReferenceException
+     * @throws \Icecho\EasyExMail\Exception\ReferenceException
      */
     public function operate(array $attribute)
     {

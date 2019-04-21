@@ -9,17 +9,17 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Icehco\EasyExMail\Department;
+namespace Icecho\EasyExMail\Department;
 
 use Zttp\Zttp;
-use Icehco\EasyExMail\Base\Base;
+use Icecho\EasyExMail\Base\Base;
 
 class Department extends Base
 {
     /**
      * @return array
      *
-     * @throws \Icehco\EasyExMail\Exception\ReferenceException
+     * @throws \Icecho\EasyExMail\Exception\ReferenceException
      */
     public function get()
     {
@@ -40,7 +40,7 @@ class Department extends Base
      *
      * @return array
      *
-     * @throws \Icehco\EasyExMail\Exception\ReferenceException
+     * @throws \Icecho\EasyExMail\Exception\ReferenceException
      */
     public function find(string $name, int $fuzzy = 0)
     {
@@ -61,7 +61,7 @@ class Department extends Base
      *
      * @return bool
      *
-     * @throws \Icehco\EasyExMail\Exception\ReferenceException
+     * @throws \Icecho\EasyExMail\Exception\ReferenceException
      */
     public function delete(int $departmentId)
     {
@@ -84,7 +84,7 @@ class Department extends Base
      *
      * @return array
      *
-     * @throws \Icehco\EasyExMail\Exception\ReferenceException
+     * @throws \Icecho\EasyExMail\Exception\ReferenceException
      */
     public function build(string $name, int $parentId = 1, int $order = 0)
     {
@@ -112,7 +112,7 @@ class Department extends Base
      *
      * @return bool
      *
-     * @throws \Icehco\EasyExMail\Exception\ReferenceException
+     * @throws \Icecho\EasyExMail\Exception\ReferenceException
      */
     public function update(int $departmentId, string $name = '', int $parentId = 0, int $order = 0)
     {

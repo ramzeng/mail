@@ -17,7 +17,7 @@ $ composer require icecho/easyexmail -vvv
 ## 使用
 
 ```php
-use Icehco\EasyExMail\EasyExMail;
+use Icecho\EasyExMail\EasyExMail;
 
 $config = [
     'corpId' => 'your corp id',

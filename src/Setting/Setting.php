@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Icehco\EasyExMail\Setting;
+namespace Icecho\EasyExMail\Setting;
 
-use Icehco\EasyExMail\Base\Base;
+use Icecho\EasyExMail\Base\Base;
 use Zttp\Zttp;
 
 class Setting extends Base
@@ -22,7 +22,7 @@ class Setting extends Base
      *
      * @return mixed
      *
-     * @throws \Icehco\EasyExMail\Exception\ReferenceException
+     * @throws \Icecho\EasyExMail\Exception\ReferenceException
      */
     public function get(string $userId, array $type)
     {
@@ -44,7 +44,7 @@ class Setting extends Base
      *
      * @return bool
      *
-     * @throws \Icehco\EasyExMail\Exception\ReferenceException
+     * @throws \Icecho\EasyExMail\Exception\ReferenceException
      */
     public function update(string $userId, array $option)
     {

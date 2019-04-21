@@ -9,21 +9,21 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Icehco\EasyExMail\Member;
+namespace Icecho\EasyExMail\Member;
 
 use Zttp\Zttp;
-use Icehco\EasyExMail\Base\Base;
+use Icecho\EasyExMail\Base\Base;
 
 class Member extends Base
 {
     /**
-     * @param int    $departmentId
+     * @param int $departmentId
      * @param string $type
-     * @param int    $fetchChild
+     * @param int $fetchChild
      *
      * @return array
      *
-     * @throws \Icehco\EasyExMail\Exception\ReferenceException
+     * @throws \Icecho\EasyExMail\Exception\ReferenceException
      */
     public function get(int $departmentId, string $type = 'simple', int $fetchChild = 1)
     {
@@ -48,7 +48,7 @@ class Member extends Base
      *
      * @return array
      *
-     * @throws \Icehco\EasyExMail\Exception\ReferenceException
+     * @throws \Icecho\EasyExMail\Exception\ReferenceException
      */
     public function find(string $email)
     {
@@ -69,7 +69,7 @@ class Member extends Base
      *
      * @return bool
      *
-     * @throws \Icehco\EasyExMail\Exception\ReferenceException
+     * @throws \Icecho\EasyExMail\Exception\ReferenceException
      */
     public function build(array $attribute)
     {
@@ -91,7 +91,7 @@ class Member extends Base
      *
      * @return bool
      *
-     * @throws \Icehco\EasyExMail\Exception\ReferenceException
+     * @throws \Icecho\EasyExMail\Exception\ReferenceException
      */
     public function delete(string $email)
     {
@@ -112,7 +112,7 @@ class Member extends Base
      *
      * @return bool
      *
-     * @throws \Icehco\EasyExMail\Exception\ReferenceException
+     * @throws \Icecho\EasyExMail\Exception\ReferenceException
      */
     public function update(array $attribute)
     {
@@ -134,7 +134,7 @@ class Member extends Base
      *
      * @return mixed
      *
-     * @throws \Icehco\EasyExMail\Exception\ReferenceException
+     * @throws \Icecho\EasyExMail\Exception\ReferenceException
      */
     public function check(array $list)
     {

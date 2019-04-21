@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Icehco\EasyExMail\Aider;
+namespace Icecho\EasyExMail\Aider;
 
-use Icehco\EasyExMail\Base\Base;
 use Zttp\Zttp;
+use Icecho\EasyExMail\Base\Base;
 
 class Aider extends Base
 {
@@ -23,7 +23,7 @@ class Aider extends Base
      *
      * @return mixed
      *
-     * @throws \Icehco\EasyExMail\Exception\ReferenceException
+     * @throws \Icecho\EasyExMail\Exception\ReferenceException
      */
     public function unreadEmail(string $userId, string $start, string $end)
     {
@@ -46,7 +46,7 @@ class Aider extends Base
      *
      * @return mixed
      *
-     * @throws \Icehco\EasyExMail\Exception\ReferenceException
+     * @throws \Icecho\EasyExMail\Exception\ReferenceException
      */
     public function loginUrl(string $userId)
     {

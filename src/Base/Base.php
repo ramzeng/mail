@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Icehco\EasyExMail\Base;
+namespace Icecho\EasyExMail\Base;
 
-use Icehco\EasyExMail\Traits\Helper;
+use Icecho\EasyExMail\Traits\Helper;
 
 class Base
 {

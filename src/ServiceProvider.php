@@ -9,7 +9,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Icehco\EasyExMail;
+namespace Icecho\EasyExMail;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
