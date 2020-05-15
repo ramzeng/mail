@@ -258,8 +258,6 @@ $easy->aider()->unreadEmail(string $userId, string $start, string $end);
 $easy->aider()->login(string $userId);
 ```
 
-I like php, laravel, and overtrue !
-
 ## License
 
 MIT
